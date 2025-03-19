@@ -29,24 +29,24 @@
             <form name="signupForm" ng-submit="mainCtrl.submit()" novalidate>
                 
                 <label>First Name:</label>
-                <input type="text" ng-model="mainCtrl.user.firstName" required>
+                <input type="text" ng-model="mainCtrl.user.firstName" required><br>
                 <span class="text-danger" ng-show="signupForm.firstName.$error.required">Required</span>
 
                 <label>Last Name:</label>
-                <input type="text" ng-model="mainCtrl.user.lastName" required>
+                <input type="text" ng-model="mainCtrl.user.lastName" required><br>
                 <span class="text-danger" ng-show="signupForm.lastName.$error.required">Required</span>
 
                 <label>Email:</label>
-                <input type="email" ng-model="mainCtrl.user.email" required>
+                <input type="email" ng-model="mainCtrl.user.email" required><br>
                 <span class="text-danger" ng-show="signupForm.email.$error.required">Required</span>
                 <span class="text-danger" ng-show="signupForm.email.$error.email">Invalid Email</span>
 
                 <label>Phone:</label>
-                <input type="text" ng-model="mainCtrl.user.phone" required>
+                <input type="text" ng-model="mainCtrl.user.phone" required><br>
                 <span class="text-danger" ng-show="signupForm.phone.$error.required">Required</span>
 
                 <label>Favorite Menu Item (e.g., L1):</label>
-                <input type="text" ng-model="mainCtrl.user.favorite" required>
+                <input type="text" ng-model="mainCtrl.user.favorite" required><br>
                 <span class="text-danger" ng-show="mainCtrl.invalidMenu">No such menu item exists.</span>
 
                 <button type="submit" ng-disabled="signupForm.$invalid">Submit</button>
